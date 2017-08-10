@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body jwcid="@Body">
+<form jwcid="@Form" listener="listener:onOk">
+    <!--<input type="text" jwcid="@TextField" value="ognl:stockId"/>-->
+    <select jwcid="@PropertySelection" model="ognl:availStockIds" value="ognl:stockId" />
+    <span jwcid="@DatePicker" value="ognl:quoteDate"></span>
+    <input type="submit" value="查询"/>
+</form>
+</body>
+</html>
